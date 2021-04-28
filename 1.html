@@ -2,31 +2,66 @@
 <html>
 <head>
     <title>WEB - html</title>
-    <meta charset="utf=8">
+    <meta charset="utf-8">
+    <style>
+        a{
+            color:black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 20px;
+        }
+        #grid ol{
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 0;
+            padding: 20px;
+            padding-left: 34px;
+        }
+        body {
+            margin: 0;
+        }
+        #grid{
+            display:grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #article{
+            padding-left: 25px;
+        }
+    </style>
 </head>
 <body>
     <h1><a href="index.html">WEB</h1></a>
-    <ol>
-        <li><a href="1.html">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
-    </ol>
-    <h2>HTML</h2>
-    <p>
-        하이퍼텍스트 마크업 언어(HyperText Markup Language, HTML, 문화어: 초본문표식달기언어, 하이퍼본문표식달기언어)는 웹 페이지를 위한 지배적인 마크업 언어다. 
-        또한, HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다. 
-        그리고 이미지와 객체를 내장하고 대화형 양식을 생성하는 데 사용될 수 있다. HTML은 웹 페이지 콘텐츠 안의 꺾쇠 괄호에 둘러싸인 "태그"로 되어있는 HTML 요소 형태로 작성한다. 
-        HTML은 웹 브라우저와 같은 HTML 처리 장치의 행동에 영향을 주는 자바스크립트와 본문과 그 밖의 항목의 외관과 배치를 정의하는 CSS 같은 스크립트를 포함하거나 불러올 수 있다. 
-        HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마크업을 위하여 CSS의 사용을 권장한다
-    </p>
-    <p>
-        [나중에 필요할 것 같은 자료]<br>
-        생활 코딩: <a href="https://opentutorials.org/course/3084/18453" target="_blank"> 동영상 삽입</a><br>
-        생활 코딩: <a href="https://opentutorials.org/course/3084/18594" target="_blank"> 댓글 기능 추가</a><br>
-        생활 코딩: <a href="https://opentutorials.org/course/3084/18597" target="_blank"> 채팅 기능 추가</a><br>
-        생활 코딩: <a href="https://opentutorials.org/course/3084/18899" target="_blank"> 방문자 분석기</a><br>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html" id="active" >HTML</a></li>
+            <li><a href="2.html" class="saw">CSS</a></li>
+            <li><a href="3.html" class="saw">JavaScript</a></li>
+        </ol>
+        <div id="article">
+            <h2>HTML</h2>
+            <p>
+                하이퍼텍스트 마크업 언어(HyperText Markup Language, HTML, 문화어: 초본문표식달기언어, 하이퍼본문표식달기언어)는 웹 페이지를 위한 지배적인 마크업 언어다. 
+                또한, HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다. 
+                그리고 이미지와 객체를 내장하고 대화형 양식을 생성하는 데 사용될 수 있다. HTML은 웹 페이지 콘텐츠 안의 꺾쇠 괄호에 둘러싸인 "태그"로 되어있는 HTML 요소 형태로 작성한다. 
+                HTML은 웹 브라우저와 같은 HTML 처리 장치의 행동에 영향을 주는 자바스크립트와 본문과 그 밖의 항목의 외관과 배치를 정의하는 CSS 같은 스크립트를 포함하거나 불러올 수 있다. 
+                HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마크업을 위하여 CSS의 사용을 권장한다
+            </p>
+            <br>
+            <p>
+                [나중에 필요할 것 같은 자료]<br>
+                생활 코딩: <a href="https://opentutorials.org/course/3084/18453" target="_blank"> 동영상 삽입</a><br>
+                생활 코딩: <a href="https://opentutorials.org/course/3084/18594" target="_blank"> 댓글 기능 추가</a><br>
+                생활 코딩: <a href="https://opentutorials.org/course/3084/18597" target="_blank"> 채팅 기능 추가</a><br>
+                생활 코딩: <a href="https://opentutorials.org/course/3084/18899" target="_blank"> 방문자 분석기</a><br>
 
-    </p>
+            </p>
+        </div>
+    </div>
 
 </body>
 
